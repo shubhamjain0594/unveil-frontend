@@ -1,0 +1,14 @@
+.top-bottom-buffer {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+html {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 0.6rem;
+    }
+}

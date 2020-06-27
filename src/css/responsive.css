@@ -1,0 +1,349 @@
+@media screen and (min-width: 3000px){
+    html {
+        font-size: 16px;
+    }
+
+    .App {
+        margin: 3vw;
+    }
+}
+
+@media screen and (max-width: 3000px) {
+    html {
+        font-size: 4px;
+    }
+
+    .App {
+        margin: 1vh;
+    }
+}
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+    font-family: "Source Code Pro", monospace;
+}
+
+.App {
+    text-align: center;
+}
+
+.UserContainer {
+    max-height: 100%;
+    flex: 1;
+    margin: auto;
+}
+
+#AppsContainer, #DeviceInfo{
+    width: 100vw;
+    height: auto;
+    margin: 1vw;
+    flex: 1;
+}
+
+#DNSContainer, #TrafficContainer{
+    width: 100vw;
+    height: auto;
+    margin: 1vw;
+    /*max-height: 28vh;*/
+}
+
+#title{
+    border: 0;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 0.2em;
+}
+
+.row{
+    overflow: hidden;
+    display: flex;
+}
+
+.ContainerRow{
+    overflow: hidden;
+    display: flex;
+}
+
+th,
+td {
+    border: 0.05vw dashed #41FF00;
+    border-collapse: collapse;
+    text-align: left;
+    color: #41FF00;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 3rem;
+}
+
+.col{
+    margin: 0.2rem;
+    flex: 1;
+}
+
+.ContainerCol{
+    margin: 0;
+    flex: 1;
+}
+
+header {
+    border-top: 0.1vw dashed #41FF00;
+    border-left: 0.1vw dashed #41FF00;
+    border-right: 0.1vw dashed #41FF00;
+    color: #41FF00;
+    font-size: 3.5rem;
+    overflow: hidden;
+    flex:auto;
+}
+
+.UserContainer, header {
+    font-family: "Source Code Pro", monospace;
+}
+
+#SecureTrafficHeader{
+    border-top: 0vw;
+}
+
+.tableTitle{
+    font-size: 3rem;
+}
+
+/*MapView*/
+
+#infoCol {
+    height: 62vh;
+    width: 25vw;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+}
+
+#addressDiv {
+    max-height: 45vh;
+    padding: 0.3vw;
+    overflow: hidden;
+
+}
+
+#phonesDiv {
+    max-height: 18vh;
+    overflow: hidden;
+    padding: 0.2vw;
+    margin-top: 0.4vh;
+
+}
+
+#cpgLogo {
+    background-image: url("/img/cpg-white-on-black.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    /*vertical-align: middle;*/
+}
+
+#cpgGroup {
+    width: 28vw;
+    margin: auto;
+    color: white;
+    font: 5rem "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.teamPic {
+    display: block;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.rowFigure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.figCaption {
+    font: 0.75rem "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#map {
+    height: 100vh;
+    width: 75vw;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+
+#leftCol {
+    padding: 1vw 10vw 10vw 10vw;
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+}
+
+#minimap {
+    height: 38vh;
+    width: 25vw;
+    border: 0px;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    position: fixed;
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+hr {
+    display: block;
+    margin-top: 3.8rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dashed;
+    border-width: 0.06vw;
+    color: #41FF00;
+}
+
+.tooltipLeaflet{
+    background-color: black;
+    color: #FF00DD;
+    font-size: 3rem;
+}
+
+/* icons design */
+span{
+    font-weight: bold;
+}
+
+.marker-cluster-small {
+    background-color: rgba(161, 229, 12, 0.6);
+    border-radius: 1.5rem;
+}
+
+.marker-cluster-small div {
+    background-color: rgba(179, 255, 126, 0.6);
+    border-radius: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.marker-cluster-small span {
+    line-height: 2.4rem;
+}
+
+.marker-cluster-medium {
+    background-color: rgba(161, 229, 12, 0.6);
+    border-radius: 2.8rem;
+}
+
+.marker-cluster-medium div {
+    background-color: rgba(179, 255, 126, 0.6);
+    border-radius: 3.2rem;
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.marker-cluster-medium span {
+    line-height: 3.5rem;
+}
+
+.marker-cluster-large {
+    background-color: rgba(161, 229, 12, 0.6);
+    border-radius: 3.2rem;
+}
+
+.marker-cluster-large div {
+    background-color: rgba(179, 255, 126, 0.6);
+    border-radius: 3.5rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.marker-cluster-large span {
+    line-height: 3.9rem;
+}
+
+
+.marker-cluster {
+    background-clip: padding-box;
+}
+
+.marker-cluster div {
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+
+    text-align: center;
+    font: 1.5rem "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.leaflet-marker-pane{
+    filter: brightness(50%);
+}
+
+.leaflet-tooltip-left {
+    margin-left: -1.5rem;
+    margin-top: 1.5rem;
+}
+
+.leaflet-tooltip-right {
+    margin-left: 3.1rem;
+    margin-top: 1.5rem;
+}
+
+.ScreenshotsContainer {
+    margin-left: 0vw;
+    margin-top: 25vh;
+    max-width: 66.67vw;
+    max-height: 75vh;
+}
+
+.Screenshot {
+    height: 25vh;
+}
+
+.Screenshot img {
+    max-height:100%;
+    width: auto;
+}
+
+.caption {
+    position: relative;
+    padding: 2rem;
+    margin-top: -9rem;
+    min-height: 9rem;
+    background-color: rgba(55, 55, 55, 0.75);
+    z-index: 1000;
+    color: #41FF00;
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+}
