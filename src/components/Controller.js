@@ -95,9 +95,9 @@ class ControllerOperator extends Component {
                         </div>) : (
                             <div
                             className="col-lg-2 offset-lg-2 align-self-center">
-                                <button className="btn btn-lg btn-success"
+                                <button className="btn btn-lg btn-primary"
                                     onClick={ this.startSessionNow.bind(this) }>
-                                Auto mode
+                                Start now
                                 </button>
                             </div>)
                     }{!disabled ? (
@@ -106,19 +106,9 @@ class ControllerOperator extends Component {
                             <button className="btn btn-lg btn-primary"
                                     onClick={
                                         this.startSessionLater.bind(this) }>
-                                Auto mode after 5 mins
+                                Start after 5 mins
                             </button>
                         </div>)
-                    : (<div></div>)
-                }{!disabled ? (
-                    <div
-                            className="col-lg-2 align-self-center">
-                        <button className="btn btn-lg btn-primary"
-                                    onClick={
-                                        this.startManualSession.bind(this) }>
-                                Manual mode
-                        </button>
-                    </div>)
                     : (<div></div>)
                 }
                 </div>
