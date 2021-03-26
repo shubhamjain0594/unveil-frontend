@@ -39,7 +39,7 @@
     "prop-types": "^15.6.2",
     "raf": "^3.4.1",
     "react": "^16.4.2",
-    "react-dev-utils": "^10.2.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.4.2",
     "react-leaflet": "^2.0.1",
     "react-leaflet-markercluster": "^2.0.0-rc3",
